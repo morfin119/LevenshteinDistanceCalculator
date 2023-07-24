@@ -22,7 +22,3 @@ Output:
 ```
 1
 ```
-
-### Note
-
-The Levenshtein distance is calculated using dynamic programming to find the shortest edit distance between the two strings. The function `levenshteinDistance` efficiently computes the result and returns it as an integer.
