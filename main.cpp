@@ -8,7 +8,7 @@
 //   str2: The second input string.
 // Returns:
 //   The Levenshtein distance between str1 and str2.
-int levenshteinDistance(const std::string& str1, const std::string& str2)
+size_t levenshteinDistance(const std::string& str1, const std::string& str2)
 {
     const size_t lengthStr1 = str1.length();
     const size_t lengthStr2 = str2.length();
@@ -16,8 +16,8 @@ int levenshteinDistance(const std::string& str1, const std::string& str2)
     const size_t rows = lengthStr1 + 1;
     const size_t columns = lengthStr2 + 1;
 
-    std::vector<int> distanceMatrix(rows * columns);
-    int cost;
+    std::vector<size_t> distanceMatrix(rows * columns);
+    size_t cost;
 
     for (size_t i = 0; i < rows; i++)
     {
